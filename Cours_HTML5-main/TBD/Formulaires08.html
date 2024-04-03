@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+           <p>* Ces zones sont obligatoires</p>
+    <form action="destination.php" method="get">
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+              
+            <label> Votre nome*:</label>
+            <input type="text" name="name"> <br>
+            <label> Votre prénome*:</label>
+            <input type="text" name="name"> <br><br>
+
+            <label>Sex*:</label>
+            <input type="radio" name="gender">Féminin
+            <input type="radio" name="gender">Masculin <br> <br> <br>
+
+            <label> Date de naissance*:</label>
+            <input type="date"> <br>
+
+            <label> Code postal*:</label>
+            <input type="text"><br>
+
+            <label> Adresse*:</label>
+            <input type="text"><br>
+
+            <label> Ville*:</label>
+            <input type="text"><br>
+
+            <label> Email*:</label>
+            <input type="email" value="dave.loper@afpa.fr"><br>
+        </fieldset> <br>
+
+        <fieldset>
+               <legend>Votre demande</legend>
+               <label>Sujet*:</label>
+
+                <select>
+                 <option>Veuillez séléctionner un sujet</option>
+                </select>
+                <br> 
+                <br>
+               <label> Votre question*:</label>
+            <textarea  cols="20" rows="05"></textarea>
+        </fieldset>
+
+            <input type="checkbox">
+               <label> * J'accept le traitement informatique de ce formulaire</label> 
+                <br>
+                <input type="button" value="Envoyer">
+              <input type="button" value="Annuler"> <br>
+            <p>ci-dessous,la liste déroulante attendue :</p>
+
+         <fieldset>
+             <legend>Votre demande</legend>
+               <label> Sujet*:</label>
+                <select> 
+                 <option>"Veuillez séléctinner un sujet</option> 
+                  <option>Mes commandes</option>
+                  <option>Question sur un produit</option>
+                 <option>Réclamation</option>
+                <option>Autres</option>
+               </select><br>
+              <label>Votre questions*:</label>
+             <input type="text"><br>
+
+         </fieldset> <br>
+            <input type="checkbox">
+              <label> * J'accept le traitement informatique de ce formulaire</label><br> <br>
+              <input type="button" value="Envoyer">
+              <input type="button" value="Annuler"> <br>
+    </form>
+</body>
+</html>

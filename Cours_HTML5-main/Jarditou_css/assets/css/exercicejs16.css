@@ -1,0 +1,66 @@
+h1,h3{
+    color:rgb(19, 22, 214);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+ }
+
+#demo{
+    color:blue;   /* id pour text formate*/
+    font-size:19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+input {
+    padding: 4px;
+    box-shadow: 3px 3px 5px rgba(41, 129, 141, 0.295);
+    font-size: 14px;
+    font-weight: 200;
+    width: 180px;
+    }
+  
+  .form-req {  /* c'est une class pour form margin*/
+    margin-left: 300px;
+   }
+    
+  
+  body{
+    background-color:none;
+    background-image:url("E:/Mon Projet/Cours_HTML5-main/Jarditou_css/assets/src/img/or.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+      }
+
+
+
+  label{
+    width: 270px;
+    display:inline-block;
+      }
+
+
+  textarea{         /* ces properties pour textarea formate*/
+    padding: 6px;
+    font-size: 14px;
+    background-color: cornflowerblue;
+        }
+
+  select{
+    padding: 6px;
+    font-size: 14px;
+    background-color:greenyellow;
+       }
+
+  .dom{               /* c'est class pour pour doux button*/
+    background-color: greenyellow;
+      }
+
+  .asterix {
+
+    color: red;
+  }
+
+  body{
+    background-image: url("/home/sega/Documents/Mon Projet/Cours_HTML5-main/Jarditou_css/assets/src/img/abc.jpg");
+  
+  }

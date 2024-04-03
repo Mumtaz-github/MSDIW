@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        fieldset{
+            width: 57%;
+        }
+        legend{
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+
+
+           <img  src="assets/src/img/jarditou_logo.jpg" alt="clique ici" width="200" height="80">
+           <P>La qualité depuis 70 ans</P>
+           <div>
+         <ul class="menu">
+          <li><a href="PageAccueil.html">Acceuil</a> </li>
+             <li><a href="PageTableau.html">Tableau</a></li>
+             <li><a href="PageContact.html">Contact</a></li>
+         </ul>
+  </nav> <br>
+</div>
+<nav>
+           <img class="star" src="assets/src/img/promotion.jpg" alt="clique ici">
+    <h1>Contact</h1>
+       <p>* Ces zones sont obligatoires</p>
+<form action="destination.php" method="post">
+ <fieldset>
+       <legend>Vos coordonnées</legend>
+       
+        <label> Votre nome*:</label>
+        <input type="text" name="name" id="a"> <br>
+        <label> Votre prénome*:</label>
+        <input type="text" name="name" id="b"> <br><br>
+
+        <label>Sex*:</label>
+        <input id="genre" type="radio" name="gender">Féminin
+        <input id="genre2" type="radio" name="gender">Masculin <br> <br> <br>
+
+        <label> Date de naissance*:</label>
+        <input type="date" id="c"> <br>
+
+        <label> Code postal*:</label>
+        <input type="text" id="d"><br>
+
+        <label> Adresse*:</label>
+        <input type="text" id="e"><br>
+
+        <label> Ville*:</label>
+        <input type="text" id="f"><br>
+       <footer>
+        <label> Email*:</label>
+        <input type="email" value="dave.loper@afpa.fr" id="g">
+        <br>
+    </footer>
+ </fieldset> <br>
+
+ <fieldset>
+    <legend>Votre demande</legend>
+        <label>Sujet*:</label>
+
+      <select id="myForm" value="deroulante" onclick="insertText()">
+              <option id="choice" value="" selected>Veuillez séléctionner un sujet</option>
+              <option>Veuillez séléctinner un sujet</option> 
+              <option value="Mes commandes">Mes commandes</option>
+              <option value="Question sur un produit">Question sur un produit</option>
+              <option value="Réclamation">Réclamation</option>
+              <option value="Autres">Autres</option>
+      </select>
+              <br> 
+              <br>
+        <label> Votre question*:</label>
+              <textarea  cols="20" rows="05" id="auchoix"></textarea>
+     </fieldset>
+              <input type="checkbox" id="box">
+        <label> * J'accept le traitement informatique de ce formulaire</label> 
+              <br>
+              <input type="submit" value="Envoyer" onclick="dada()">
+              <input type="reset" value="Annuler"> <br><br>
+     </form>
+              <br>
+              <nav>
+            <ul class="menu"> 
+              <li><a href="#">Mention légales</a> </li>
+              <li><a href="#">Horaires</a></li>
+              <li><a href="#">Plan du site</a></li>      
+            </ul>
+              </nav>
+  <script src="assets/js/Evaluation.JS"> </script>
+ </body>
+</html>
