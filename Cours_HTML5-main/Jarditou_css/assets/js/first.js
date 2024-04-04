@@ -1,5 +1,5 @@
 /* 
- exercise les variables 2
+                                                                             exercise les variables 2
 
     Créer un script qui demande successivement à l'utilisateur son nom puis son prénom. 
     La page affichera les informations sur l'utilisateur via une "alert()"
@@ -26,7 +26,7 @@ c = prompt ("saissiez degrès")
  alert (F = (c *(9/5)) + 32);
 */
 
-//exercise les opérateurs
+                                                                          //exercise les opérateurs
 
 /* var a,b,c,d
    a = 100
@@ -52,7 +52,7 @@ c = prompt ("saissiez degrès")
 
 // 5. Les Conditions 
 
-// let a = prompt("entrer un nombre ");                        Exercise 1 Parité
+// let a = prompt("entrer un nombre ");                                                   Exercise 1 Parité
 
 // if  (a%2 == 0) {
 //    alert("ce nombre et pair")
@@ -60,7 +60,7 @@ c = prompt ("saissiez degrès")
 //    alert ("ce nombre est impair")
 // }
 
-// let naissance =prompt("Entre date de naissance");            Exercise 2 Age
+// let naissance =prompt("Entre date de naissance");                                          Exercise 2 Age
 //  let date = 2024;
  
 //  age =  date -naissance; 
@@ -72,7 +72,7 @@ c = prompt ("saissiez degrès")
 //    alert("tu as" +age+"ans donc tu est majeur")
 // }
 
-// let nombre01 = Number(prompt("Entre votre nombre01"));        Exercice 3 Calculette
+// let nombre01 = Number(prompt("Entre votre nombre01"));                                   Exercice 3 Calculette
 // let operator = prompt("choissisez entre /,*,-, ou +")
 // let nombre02 = Number(prompt("Entre vote nombre02"));
 
@@ -92,7 +92,7 @@ c = prompt ("saissiez degrès")
 // }
 
 /*
-nb = prompt("entrer le nb")                      //example de bucles
+nb = prompt("entrer le nb")                                                               //example de bucles
 console.log("Table de multiplication par"+nb);
 console.log("=============================");
 
@@ -111,7 +111,7 @@ console.log("fin de la boucle");
 
 
 
-//   let prenom = [];                           Exercise 1  Les Boucles
+//   let prenom = [];                                                                           Exercise 1  Les Boucles
 //   for(let i =0;i<10;i++){
 //       prenom [i] = prompt("Saisissez le prénom N°"+i+" ou Clic sur Annuler pour arrêter le saisie");
 //       if (prenom[i] == ""){
@@ -138,7 +138,7 @@ console.log("fin de la boucle");
 */
 
 /*
-                                                       Exercice 3 moyenne   partie 6 Boucles
+                                                                                           Exercice 3 moyenne   partie 6 Boucles
 
 var n = 1;
 var somme = 0;
@@ -154,7 +154,7 @@ console.log(somme);
 console.log(somme/i);
 */
 
-  /*                                                 exercice 4 multiples         partie 6   boucles
+  /*                                                                            exercice 4 multiples         partie 6   boucles
   var n, x
   n = prompt ("Entre un premier nombre");
   x= prompt ("Etnrez un scond nombre");
@@ -184,7 +184,7 @@ console.log(somme/i);
    */
 
 /*
-  Exercice 5 Nombre de voyelles                      dernier partie boucles
+                                                                         Exercice 5 Nombre de voyelles   dernier partie boucles
 
   function countVowels(word) {
     const vowels = ["a", "e", "i", "o", "u"]
@@ -212,7 +212,7 @@ console.log(somme/i);
 
 
 
-           /*                                                    Exercice#1 fonction 
+           /*                                                                          Exercice#1 fonction 
   
 let a = Number (prompt("Entrez un nombre"));
 let b = Number (prompt("Entrez un multiplicateur"));
@@ -231,7 +231,7 @@ div_affichage.innerHTML = "le produit est égal à : "+resultat
 */
 
 
-                                                           //Exercice 2  fonction        String Token
+                                                                                   //Exercice 2  fonction        String Token
  
   /* 
     function strtok(str1,str2, n) {
@@ -251,7 +251,7 @@ var a ="robert;dupont;amiens;80000";
 strtok(a, ";", 2)
 */
 
-    /*                                                      Exercice myTableau
+    /*                                                                                       Exercice myTableau
 let myTableau = new Array();
 var nb = prompt("Entrez le nombre d'invites")
 for (var i =0; i<nb; i++)

@@ -60,18 +60,20 @@
 // }
 // else{alert("erreur aucun prénom")}
 
-//    //exercice 4 tatal d'une commande
+
+//                                                              //exercice 4 tatal d'une commande
+
 // let pu=parseFloat(prompt("unit price"))
 // let qtecom=parseFloat(prompt(" la quantity"))
 // let tot=pu*qtecom
-// var remise,port,pap,livraport,reduc,total=0
+// var remise,port,pap,livraport,reduc,total=0        //livraport = shipping to pay
 
 //    if(qtecom>0){
 //       if(tot>=100&&tot<=200){
 //         remise=5
 //         }
 //       else if(tot>200&&tot<500){
-//         remise=10
+//         remise=10                                     //remise = discount
 //          }
 //       else if(tot>=500){
 //         remise=10
@@ -86,7 +88,7 @@
 //       else{
 //         livraport=0
 //           }reduc=tot*remise/100
-//       pap=parseFloat(total)+parseFloat(livraport)
+//       pap=parseFloat(total)+parseFloat(livraport)            //pap =price to pay
 //       total=parseFloat(tot)-parseFloat(reduc)
 //       document.write("remise "+remise+"% either-"+reduc+"€ either "+total+"€frais de port "+port+"%")
 //           }
