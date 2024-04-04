@@ -95,13 +95,24 @@
 
 
                                                            // Exercice 5  Vérification d'un formularire
-function insertText() {
+/*function insertText() {
     text= document.getElementById("myForm").value
     document.getElementById("auchoix").value = text;
-  }
+  }*/
 
-  function dada()
+
+
+document.addEventListener('DOMContentLoaded',function (){
+  remove = document.getElementById("choice")   //  selectionner un sujet, textarea
+  choixElement = document.getElementById("myForm")
+  choixElement.addEventListener("change",() =>{remove.remove()})
+form=document.getElementById("formulaire")})
+
+formulaire.addEventListener('submit', function dada(e)
 {
+    e.preventDefault()
+
+  valide=true
  a=document.getElementById("a").value; //nome
  b=document.getElementById("b").value;  //prenom
  c=document.getElementById("c").value;  //date de naissance
@@ -112,15 +123,13 @@ function insertText() {
 
 filtrecar = new RegExp("^[A-Za-z]+$")
 filtrenum = new RegExp("^([0-9]{5})+$")
-filtredate = new RegExp("/^[0-9]+-[0-9]+-[0-9]+$/") //date
-
-
-
-filtremail = new RegExp("^[_a-z0-9-]+@[_a-z0-9-]+.[a-z0-9]+$") //email
+filtredate = new RegExp("^[0-9]+-[0-9]+-[0-9]+$") //date  "/^[0-9]+-[0-9]+-[0-9]+$/"
+filtremail = new RegExp("^[_a-z0-9-.]+@[_a-z0-9-]+.[a-z0-9]+$") //email
 
 resultat = filtrecar.test(a)   //nome
 if(resultat==false)
 {
+  valide=false
   alert(
     "entrez votre nom svp")
 }
@@ -128,6 +137,7 @@ if(resultat==false)
 resultat = filtrecar.test(b)  //prenome
   if(resultat==false)
   {
+    valide=false
     alert("Entrez votre prenom svp ")
   }
 
@@ -135,49 +145,78 @@ resultat = filtrecar.test(b)  //prenome
 resultat = filtredate.test(c)    //date de naissance
 if (resultat==false)
 {
+  valide=false
   alert("Entrez votre date de naissance")
 }
 
 
 genre = document.getElementById("genre")  //gender feminin
 genre2 = document.getElementById("genre2")    //gender musculin
-if(genre.checked==false && genre.checked==false){
+if(genre.checked==false && genre2.checked==false){
+  valide=false
     alert("veuillez selectionner votre genre")
 }
 
 
-resultat = filtrecar.test(d)       //code postal
+resultat = filtrenum.test(d)              //code postal
 if (resultat==false)
 {
-  alert("Entrez votre code postal")
+valide=false
+alert("Entrez votre code postal")
 }
 
 
-resultat = filtrecar.test(e)       //address
-if (resultat==false)
-{
-  alert("Entrez la adress")
-}
+  resultat = filtrecar.test(e)                  //address
+  if (resultat==false)
+  {
+    valide=false
+    alert("Entrez la adress")
+  }
+  
+  
+  resultat = filtrecar.test(f)                //ville
+  if (resultat==false)
+  { valide=false
+    alert("Entrez ville nom")
+  }
+  
+  
+  resultat = filtremail.test(g)                 //email
+  if(resultat==false)
+  {
+    valide=false
+    alert("doit comporter le caractère '@")
+  }
+  
+  box = document.getElementById("box")              //gender feminin
+  if(box.checked==false && box.checked==false){
+    valide=false
+    alert("veuillez cliquer check box")
+  }
+  
+  if (valide)
+    {
+      console.log("Formulaire valide et prêt à être soumis")
+      formulaire.submit()
+      alert("Formulaire valide et prêt à être soumis")
+    }
+  
+  })
+  
 
 
-resultat = filtrecar.test(f)         //ville
-if (resultat==false)
-{
-  alert("Entrez ville nom")
-}
 
 
-resultat = filtremail.test(g)        //email
-if(resultat==false)
-{
-  alert("doit comporter le caractère '@")
-}
 
-box = document.getElementById("box")  //gender feminin
-if(box.checked==false && box.checked==false){
-  alert("veuillez cliquer check box")
-}
-}
- let remove = document.getElementById("choice")   //  selectionner un sujet, textarea
-let choixElement = document.getElementById("myForm")
-choixElement.addEventListener("change",() =>{remove.remove()})
+
+
+
+
+
+
+
+
+
+
+
+

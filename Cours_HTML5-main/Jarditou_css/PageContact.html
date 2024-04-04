@@ -31,7 +31,7 @@
            <img class="star" src="assets/src/img/promotion.jpg" alt="clique ici">
     <h1>Contact</h1>
        <p>* Ces zones sont obligatoires</p>
-<form action="destination.php" method="post">
+<form id="formulaire" action="http://bienvenu.net/script.php" method="post">
  <fieldset>
        <legend>Vos coordonnées</legend>
        
@@ -45,7 +45,7 @@
         <input id="genre2" type="radio" name="gender">Masculin <br> <br> <br>
 
         <label> Date de naissance*:</label>
-        <input type="date" id="c"> <br>
+        <input type="date" name="ddn" id="c"> <br>
 
         <label> Code postal*:</label>
         <input type="text" id="d"><br>
@@ -66,9 +66,8 @@
     <legend>Votre demande</legend>
         <label>Sujet*:</label>
 
-      <select id="myForm" value="deroulante" onclick="insertText()">
-              <option id="choice" value="" selected>Veuillez séléctionner un sujet</option>
-              <option>Veuillez séléctinner un sujet</option> 
+      <select id="myForm" value="deroulante" >
+              <option id="choice" value="" selected>Veuillez séléctionner un sujet</option> 
               <option value="Mes commandes">Mes commandes</option>
               <option value="Question sur un produit">Question sur un produit</option>
               <option value="Réclamation">Réclamation</option>
@@ -82,7 +81,7 @@
               <input type="checkbox" id="box">
         <label> * J'accept le traitement informatique de ce formulaire</label> 
               <br>
-              <input type="submit" value="Envoyer" onclick="dada()">
+              <input type="submit" value="Envoyer">
               <input type="reset" value="Annuler"> <br><br>
      </form>
               <br>
